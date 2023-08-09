@@ -21,5 +21,10 @@ def insert_value(lst):
         lst.insert(i, int(value))
     return lst
 
-result = insert_value(passage)
-print(result)
+results = insert_value(passage)
+# print(results)
+
+newvalue = []
+for result in results:
+    newvalue.append(hex(result)[2:].zfill(4))
+print(newvalue)
